@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P1C2-B: Déclarez des variables et modifiez leurs valeurs</title>
+<style>    code[data-claire-semantic="text"]{background: rgba(0,0,0,.04);     padding: 1px 5px;     margin: 0 4px;     border: 1px solid rgba(0,0,0,.09);     display: inline-block;     word-break: break-word;}
+code[data-claire-semantic="javascript"] .ace-openclassrooms{    margin-top: 25px;
+    background-color: #272822;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+code[data-claire-semantic="javascript"]+textarea{display:none;}
+.ace_gutter-cell:before {
+    content: counter(ace_line, decimal);
+    counter-increment: ace_line;
+}
+</style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/6175841-apprenez-a-programmer-avec-javascript/6278392-declarez-des-variables-et-modifiez-leurs-valeurs#/id/r-7178052">Chapitre
+    du cours OC</a>
+  <h1>Pratiquez l'utilisation des opérateurs</h1>
+  <hr />
+
+  <div class="foldable" id="ui-id-3" data-widget="foldable">
+    <h4 id="r-7178052" data-claire-element-id="32823986" class=""><strong>Pratiquez l'utilisation des
+        opérateurs</strong></h4>
+    <p id="r-7179740" data-claire-element-id="31480139" class=""><strong><img id="r-7179739"
+          data-claire-element-id="31480138"
+          src="../YourTurn.png" alt=""></strong></p>
+    <p id="r-7177890" data-claire-element-id="32823985" class="">Pour vous entraîner à créer des variables, rendez-vous
+      sur cet <a href="https://codepen.io/nicolaspatschkowski/pen/BaNxgzN" target="_blank"
+        rel="noopener noreferrer nofollow">exercice CodePen</a>.</p>
+    <p id="r-7177891" data-claire-element-id="31476076" class="">Ajoutons maintenant un nouvel élément à notre composant
+      de série : le temps total de visionnage d'une série (info essentielle pour les adeptes du binge-watching !).</p>
+    <ol id="r-7177896" data-claire-element-id="31476458" class="">
+      <li id="r-7177893" data-claire-element-id="31476455">
+        <p id="r-7177892" data-claire-element-id="31476454">Dans l'éditeur JavaScript, créez deux variables, &nbsp;<code
+            data-claire-semantic="text">episodeTime</code>&nbsp; et &nbsp;<code
+            data-claire-semantic="text">commercialTime</code>&nbsp; ("temps de l'épisode" et "temps des pubs"), avec des
+          valeurs appropriées (45 et 5, par exemple).</p>
+      </li>
+      <li id="r-7177895" data-claire-element-id="31476457">
+        <p id="r-7177894" data-claire-element-id="31476456">À l'aide des deux variables de temps que vous venez de
+          créer, ainsi que du nombre d'épisodes et du nombre de saisons (variables préexistantes), créez une variable
+          nommée &nbsp;<code data-claire-semantic="text">totalShowTime</code>&nbsp; qui contient le temps de visionnage
+          total de cette série.</p>
+      </li>
+    </ol>
+    <p id="r-7177897" data-claire-element-id="31476459">Les variables &nbsp;<code
+        data-claire-semantic="text">numberOfSeasons</code>&nbsp; et &nbsp;<code
+        data-claire-semantic="text">numberOfEpisodes</code>&nbsp; ont déjà été déclarées pour vous.</p>
+    <h5 id="r-7177901" data-claire-element-id="31481066"><strong>Solution</strong></h5>
+    <p id="r-7177899" data-claire-element-id="31476084"><a href="https://codepen.io/nicolaspatschkowski/pen/jOPJWJO"
+        target="_blank" rel="noopener noreferrer nofollow">Voici un nouveau CodePen avec une solution</a> à l’exercice.
+    </p>
+    <aside id="r-7180068" data-claire-element-id="31481065" data-claire-semantic="information">
+      <p id="r-7177900" data-claire-element-id="31476085">Sachez qu'il existe beaucoup d'autres façons de manipuler les
+        variables, et vous en verrez beaucoup dans le reste de ce cours !</p>
+    </aside>
+    <h4 id="r-7180075" data-claire-element-id="31481086"><strong>Mutabilité des variables</strong></h4>
+    <p id="r-7180069" data-claire-element-id="31481068" class="">Une variable est de base mutable c'est-à-dire qu’elle
+      peut changer au cours du temps. On la déclare avec le mot clé &nbsp;<code
+        data-claire-semantic="text">let</code>&nbsp; suivi d’un nom de variable et on lui affecte une valeur de départ.
+      Par la suite, on va pouvoir changer la valeur de cette variable autant de fois que l’on souhaite.</p>
+    <blockquote id="r-7180071" data-claire-element-id="31481070" class="">
+      <p id="r-7180070" data-claire-element-id="31481069">On crée un compteur à 0. Et, à chaque fois qu’on clique sur un
+        bouton on augmente la valeur de 1 pour connaître à tout instant le nombre de clics réalisés, depuis le début de
+        l'exécution du code.</p>
+    </blockquote>
+    <p id="r-7180072" data-claire-element-id="31481071" class="">Exemple :</p>
+    <pre id="r-7180073" data-claire-element-id="31481085" class="code-block"><code data-claire-semantic="javascript" data-code="{&quot;language&quot;:&quot;javascript&quot;,&quot;source&quot;:&quot;let compteur = 0;\ncompteur++;\ncompteur = 10;&quot;}" class="ace" data-widget="codeBlock"><div class="ace-openclassrooms"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">let</span> <span class="ace_identifier">compteur</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_constant ace_numeric">0</span><span class="ace_punctuation ace_operator">;</span>
+  </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">compteur</span><span class="ace_keyword ace_operator">++</span><span class="ace_punctuation ace_operator">;</span>
+  </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">compteur</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_constant ace_numeric">10</span><span class="ace_punctuation ace_operator">;</span>
+  </div></div></div></code><textarea class="code-block--raw-code"></textarea></pre>
+    <p id="r-7180074" data-claire-element-id="31481073"></p>
+  </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-5" data-widget="foldable">
+    <h3 id="r-7179392" data-claire-element-id="31478969" class="foldable__button secondTitle js-foldable-button">
+      <strong>En résumé</strong><i class="foldable__icon icon-next"></i>
+    </h3>
+    <div class="foldable__content">
+      <p id="r-7177922" data-claire-element-id="31476107" class="">Dans ce chapitre, vous avez appris les bases des
+        variables en JavaScript. Vous savez désormais :</p>
+      <ul id="r-7177929" data-claire-element-id="31478966" class="">
+        <li id="r-7177924" data-claire-element-id="31476109">
+          <p id="r-7177923" data-claire-element-id="31476108"><strong>déclarer</strong> les variables par le mot clé
+            <em>let</em> et un nom en "camel case", et les <strong>initialiser</strong> avec l'opérateur = ;
+          </p>
+        </li>
+        <li id="r-7177926" data-claire-element-id="31476515">
+          <p id="r-7177925" data-claire-element-id="31476514"><strong>modifier</strong> le contenu d'une variable en la
+            réaffectant, ou avec des opérateurs ;</p>
+        </li>
+        <li id="r-7177928" data-claire-element-id="31478965">
+          <p id="r-7177927" data-claire-element-id="31478964">utiliser des <strong>constantes</strong> pour éviter le
+            remplacement d'éléments de données essentiels.</p>
+        </li>
+      </ul>
+      <p id="r-7177930" data-claire-element-id="31478967">Dans le chapitre qui suit, nous verrons un attribut important
+        des variables : leur <strong>type</strong>.</p>
+      <p id="r-7179397" data-claire-element-id="31478968"><em>Dans le chapitre suivant, vous découvrirez comment
+          enregistrer vos données avec des types de données.</em></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

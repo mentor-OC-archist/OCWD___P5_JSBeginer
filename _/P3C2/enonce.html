@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P3C2: Définissez des méthodes d'instance et des propriétés</title>
+<style>    code[data-claire-semantic="text"]{background: rgba(0,0,0,.04);     padding: 1px 5px;     margin: 0 4px;     border: 1px solid rgba(0,0,0,.09);     display: inline-block;     word-break: break-word;}
+code[data-claire-semantic="javascript"] .ace-openclassrooms{    margin-top: 25px;
+    background-color: #272822;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+code[data-claire-semantic="javascript"]+textarea{display:none;}
+.ace_gutter-cell:before {
+    content: counter(ace_line, decimal);
+    counter-increment: ace_line;
+}
+</style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/6175841-apprenez-a-programmer-avec-javascript/6279381-definissez-des-methodes-dinstance-et-des-proprietes">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <div class="foldable__content">
+    <p id="r-7176124" data-claire-element-id="31473134">
+    <h4 id="r-7176311" data-claire-element-id="31480644"><strong>Pratiquez les méthodes instance</strong></h4>
+    <p id="r-7179792" data-claire-element-id="31480262" class="hoveredCourseElement"><strong><img id="r-7179791"
+          data-claire-element-id="31480261"
+          src="../YourTurn.png"
+          alt="16165901356926_A-vous-de-jouer.png"></strong></p>
+    <p id="r-7176223" data-claire-element-id="31473233">Voyons maintenant comment utiliser des méthodes d'instance pour
+      enregistrer l'application de diffusion vidéo.</p>
+    <p id="r-7176224" data-claire-element-id="31473351">Rendez-vous sur cet <a
+        href="https://codepen.io/nicolaspatschkowski/pen/eYNKJmP" target="_blank"
+        rel="noopener noreferrer nofollow">éditeur CodePen</a>.</p>
+    <p id="r-7176225" data-claire-element-id="31473352">Plutôt que d'utiliser une fonction pour calculer la note moyenne
+      pour une série, on a décidé que la classe Show (ou "Série") devrait gérer les nouvelles notes automatiquement.</p>
+    <p id="r-7176226" data-claire-element-id="31473353">Comme vous pouvez le constater, la classe&nbsp; &nbsp;<code
+        data-claire-semantic="text">Show</code>&nbsp; contient un &nbsp;<code
+        data-claire-semantic="text">Array&nbsp; ratings</code>&nbsp; , pour les notes, qui est initialisé vide, et une
+      propriété&nbsp; &nbsp;<code data-claire-semantic="text">averageRating</code>&nbsp; (note moyenne) de zéro.</p>
+    <ol id="r-7176231" data-claire-element-id="31479654">
+      <li id="r-7176228" data-claire-element-id="31479653">
+        <p id="r-7176227" data-claire-element-id="31479652">Déclarez une méthode instance dans la classe&nbsp;
+          &nbsp;<code data-claire-semantic="text">Show</code>&nbsp; appelée&nbsp;<code
+            data-claire-semantic="text">addRating()</code>&nbsp; . Elle prendra une&nbsp; &nbsp;<code
+            data-claire-semantic="text">rating</code>&nbsp; (la note), qui sera un nombre entre 1 et 5, comme paramètre.
+        </p>
+      </li>
+      <li id="r-7176230" data-claire-element-id="31473357">
+        <p id="r-7176229" data-claire-element-id="31473356">La méthode&nbsp; &nbsp;<code
+            data-claire-semantic="text">addRating()</code>&nbsp; doit :</p>
+      </li>
+    </ol>
+    <ul id="r-7176236" data-claire-element-id="31473363">
+      <li id="r-7176233" data-claire-element-id="31473360">
+        <p id="r-7176232" data-claire-element-id="31473359">ajouter la note reçue au tableau &nbsp;<code
+            data-claire-semantic="text">ratings</code>&nbsp; de l'instance ;</p>
+      </li>
+      <li id="r-7176235" data-claire-element-id="31473362">
+        <p id="r-7176234" data-claire-element-id="31473361">recalculer la valeur&nbsp;<code
+            data-claire-semantic="text">averageRating</code>&nbsp; de l'instance.</p>
+      </li>
+    </ul>
+    <p id="r-7176237" data-claire-element-id="31473371" class="">Cliquez sur le bouton "Check ratings" pour vérifier si
+      les séries se mettent à jour correctement. Vous pouvez cliquer plusieurs fois sur le bouton pour voir l'évolution
+      des notes moyennes.</p>
+    <h5 id="r-7176288" data-claire-element-id="31480263"><strong>Solution</strong></h5>
+    <p id="r-7176239" data-claire-element-id="31473249"><a href="https://codepen.io/nicolaspatschkowski/pen/poJYedM"
+        target="_blank" rel="noopener noreferrer nofollow">Voici un nouveau CodePen avec une solution</a> à l’exercice.
+    </p>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-3" data-widget="foldable">
+    <h3 id="r-7179586" data-claire-element-id="31479692"
+      class="foldable__button secondTitle js-foldable-button hoveredCourseElement"><strong>En résumé</strong><i
+        class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-7176289" data-claire-element-id="31473299" class="">Dans ce chapitre, nous nous sommes intéressés à deux
+        types de méthodes de classe :</p>
+      <ul id="r-7176294" data-claire-element-id="31473304" class="">
+        <li id="r-7176291" data-claire-element-id="31473301">
+          <p id="r-7176290" data-claire-element-id="31473300">les méthodes d'<strong>instance</strong>, qui agissent sur
+            les instances individuelles d'une classe ;</p>
+        </li>
+        <li id="r-7176293" data-claire-element-id="31473303">
+          <p id="r-7176292" data-claire-element-id="31473302">les méthodes <strong>statiques</strong>, qui ne s'appuient
+            pas sur une instance d'une classe.</p>
+        </li>
+      </ul>
+      <p id="r-7176295" data-claire-element-id="31473305"><em>Dans le chapitre qui suit, nous allons voir comment écrire
+          des fonctions, et du code propre qui soit facile à lire, à maintenir et à adapter !</em></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

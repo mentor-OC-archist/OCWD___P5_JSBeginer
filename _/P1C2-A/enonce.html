@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P1C2-A: Déclarez des variables et modifiez leurs valeurs</title>
+<style>    code[data-claire-semantic="text"]{background: rgba(0,0,0,.04);     padding: 1px 5px;     margin: 0 4px;     border: 1px solid rgba(0,0,0,.09);     display: inline-block;     word-break: break-word;}
+code[data-claire-semantic="javascript"] .ace-openclassrooms{    margin-top: 25px;
+    background-color: #272822;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+code[data-claire-semantic="javascript"]+textarea{display:none;}
+.ace_gutter-cell:before {
+    content: counter(ace_line, decimal);
+    counter-increment: ace_line;
+}
+</style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/6175841-apprenez-a-programmer-avec-javascript/6278392-declarez-des-variables-et-modifiez-leurs-valeurs#/id/r-7177984">Chapitre
+    du cours OC</a>
+  <h1>Pratiquez la création de variables</h1>
+  <hr />
+
+  <div class="foldable__content">
+    <p id="r-7177809" data-claire-element-id="31475994" class="">Pour utiliser une variable dans votre code, vous devez
+      la créer. C'est ce qu'on appelle <strong><em>déclarer</em></strong><em> une variable</em>.</p>
+    <p id="r-7177811" data-claire-element-id="31475996" class="hoveredCourseElement">En JavaScript, la déclaration d'une
+      variable se limite au mot clé <em>let</em>, suivi du nom de variable choisi :</p>
+    <pre id="r-7177947" data-claire-element-id="31786445" class="code-block"><code data-claire-semantic="javascript" data-code="{&quot;language&quot;:&quot;javascript&quot;,&quot;source&quot;:&quot;let numberOfCats = 2;\nlet numberOfDogs = 4;&quot;}" class="ace" data-widget="codeBlock"><div class="ace-openclassrooms"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">let</span> <span class="ace_identifier">numberOfCats</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_constant ace_numeric">2</span><span class="ace_punctuation ace_operator">;</span>
+  </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">let</span> <span class="ace_identifier">numberOfDogs</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_constant ace_numeric">4</span><span class="ace_punctuation ace_operator">;</span>
+  </div></div></div></code><textarea class="code-block--raw-code"></textarea></pre>
+    <p id="r-7177816" data-claire-element-id="31476183" class="">Ici, nous déclarons (créons) et initialisons (donnons
+      une valeur à) deux variables :&nbsp; &nbsp;<code data-claire-semantic="text">numberOfCats</code>&nbsp; et&nbsp;
+      &nbsp;<code data-claire-semantic="text">numberOfDogs</code>&nbsp; .</p>
+    <h4 id="r-7177983" data-claire-element-id="31480495" class=""><strong>Pratiquez la création de variables</strong>
+    </h4>
+    <p id="r-7179738" data-claire-element-id="31480135" class=""><strong><img id="r-7179737"
+          data-claire-element-id="31480134"
+          src="../YourTurn.png" alt=""></strong></p>
+    <p id="r-7177817" data-claire-element-id="31476203" class="">Je vous propose un exercice permettant de créer et
+      d'initialiser deux variables. Rendez-vous sur cet <a href="https://codepen.io/nicolaspatschkowski/pen/KKpRQWw"
+        target="_blank" rel="noopener noreferrer nofollow">exercice CodePen</a>. Vous allez créer deux variables qui
+      sont nécessaires pour le fonctionnement d'un composant créé par votre collègue. Ensemble, vous êtes en train de
+      créer la page "Liste" des séries télé, et chaque série a besoin d'une variable pour son nombre de saisons, ainsi
+      que pour le nombre d'épisodes par saison.</p>
+    <p id="r-7177818" data-claire-element-id="31476213" class="">Votre collègue vous demande de nommer ces
+      variables&nbsp; &nbsp;<code data-claire-semantic="text">numberOfSeasons</code>&nbsp; et&nbsp; &nbsp;<code
+        data-claire-semantic="text">numberOfEpisodes</code>&nbsp; pour qu'elles soient compatibles avec son code. Suivez
+      les étapes suivantes :</p>
+    <ol id="r-7177823" data-claire-element-id="31478906" class="">
+      <li id="r-7177820" data-claire-element-id="31478905">
+        <p id="r-7177819" data-claire-element-id="31478904">Créez une variable appelée&nbsp; &nbsp;<code
+            data-claire-semantic="text">numberOfSeasons</code>&nbsp; et assignez-lui la valeur 6 entre les lignes créées
+          pour vous dans l'éditeur JavaScript (l'onglet appelé "JS"). Pensez à utiliser le mot clé let, et n'oubliez pas
+          le point-virgule en fin de ligne !</p>
+      </li>
+      <li id="r-7177822" data-claire-element-id="31476217">
+        <p id="r-7177821" data-claire-element-id="31476216">Ensuite, créez une variable appelée &nbsp;<code
+            data-claire-semantic="text">numberOfEpisodes</code>&nbsp; et assignez-lui la valeur 12.</p>
+      </li>
+    </ol>
+    <aside id="r-7177972" data-claire-element-id="31476234" data-claire-semantic="information" class="">
+      <p id="r-7177824" data-claire-element-id="31476233">J'ai utilisé mon éditeur de code, dont l'interface est
+        légèrement différente de la vôtre. Mais la démarche et la solution restent les mêmes ! J'utilise également des
+        lignes de code additionnelles ("export", par exemple) mais ne vous en préoccupez pas, tout ce qu'il vous est
+        nécessaire de <strong>modifier se trouve entre les "==="</strong>.</p>
+    </aside>
+    <h5 id="r-7177828" data-claire-element-id="31476256" class=""><strong>Solution</strong></h5>
+    <p id="r-7177826" data-claire-element-id="31476011" class="">Vous avez terminé ? <a
+        href="https://codepen.io/nicolaspatschkowski/pen/dyorGbO" target="_blank"
+        rel="noopener noreferrer nofollow">Voici un nouveau CodePen avec une solution</a> à l’exercice.</p>
+    <aside id="r-7177982" data-claire-element-id="31476255" data-claire-semantic="warning" class="">
+      <p id="r-7177827" data-claire-element-id="31476254">Attention : dans beaucoup de démonstrations JavaScript, vous
+        pourrez croiser le mot clé&nbsp; &nbsp;<code data-claire-semantic="text">var</code>&nbsp; plutôt que&nbsp;
+        &nbsp;<code data-claire-semantic="text">let</code>&nbsp; . Bien qu'il y ait une différence subtile entre les
+        deux (que nous détaillerons dans le chapitre sur la portée), pour l'instant vous pouvez simplement voir&nbsp;
+        &nbsp;<code data-claire-semantic="text">var</code>&nbsp; comme l'ancienne version de&nbsp; &nbsp;<code
+          data-claire-semantic="text">let</code>&nbsp; : c'est une autre façon de créer une variable.</p>
+    </aside>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-5" data-widget="foldable">
+    <h3 id="r-7179392" data-claire-element-id="31478969" class="foldable__button secondTitle js-foldable-button">
+      <strong>En résumé</strong><i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-7177922" data-claire-element-id="31476107" class="">Dans ce chapitre, vous avez appris les bases des
+        variables en JavaScript. Vous savez désormais :</p>
+      <ul id="r-7177929" data-claire-element-id="31478966" class="">
+        <li id="r-7177924" data-claire-element-id="31476109">
+          <p id="r-7177923" data-claire-element-id="31476108"><strong>déclarer</strong> les variables par le mot clé
+            <em>let</em> et un nom en "camel case", et les <strong>initialiser</strong> avec l'opérateur = ;</p>
+        </li>
+        <li id="r-7177926" data-claire-element-id="31476515">
+          <p id="r-7177925" data-claire-element-id="31476514"><strong>modifier</strong> le contenu d'une variable en la
+            réaffectant, ou avec des opérateurs ;</p>
+        </li>
+        <li id="r-7177928" data-claire-element-id="31478965">
+          <p id="r-7177927" data-claire-element-id="31478964">utiliser des <strong>constantes</strong> pour éviter le
+            remplacement d'éléments de données essentiels.</p>
+        </li>
+      </ul>
+      <p id="r-7177930" data-claire-element-id="31478967">Dans le chapitre qui suit, nous verrons un attribut important
+        des variables : leur <strong>type</strong>.</p>
+      <p id="r-7179397" data-claire-element-id="31478968"><em>Dans le chapitre suivant, vous découvrirez comment
+          enregistrer vos données avec des types de données.</em></p>
+    </div>
+  </div>
+</body>
+
+</html>

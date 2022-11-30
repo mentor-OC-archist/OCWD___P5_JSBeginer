@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P3C1: Travaillez sur les fonctions</title>
+<style>    code[data-claire-semantic="text"]{background: rgba(0,0,0,.04);     padding: 1px 5px;     margin: 0 4px;     border: 1px solid rgba(0,0,0,.09);     display: inline-block;     word-break: break-word;}
+code[data-claire-semantic="javascript"] .ace-openclassrooms{    margin-top: 25px;
+    background-color: #272822;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+code[data-claire-semantic="javascript"]+textarea{display:none;}
+.ace_gutter-cell:before {
+    content: counter(ace_line, decimal);
+    counter-increment: ace_line;
+}
+</style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/6175841-apprenez-a-programmer-avec-javascript/6279223-travaillez-sur-les-fonctions">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <div class="foldable__content">
+    <h4 id="r-7176107" data-claire-element-id="31785728"><strong>Pratiquez la note moyenne</strong></h4>
+    <p id="r-7179787" data-claire-element-id="31480252" class="hoveredCourseElement"><strong><img id="r-7179786"
+          data-claire-element-id="31480251"
+          src="../YourTurn.png"
+          alt="16165901356926_A-vous-de-jouer.png"></strong></p>
+    <p id="r-7176025" data-claire-element-id="31473014">Rendez-vous sur cet <a
+        href="https://codepen.io/nicolaspatschkowski/pen/jOPKPaO" target="_blank"
+        rel="noopener noreferrer nofollow">éditeur CodePen</a>.&nbsp;</p>
+    <p id="r-7176026" data-claire-element-id="31473015" class="">Avant de commencer l’exercice, nous allons juste revoir
+      deux notions : le calcul d’une moyenne et comment parcourir un tableau.</p>
+    <h5 id="r-7176037" data-claire-element-id="31479494" class=""><em>Calculer une moyenne</em></h5>
+    <p id="r-7176028" data-claire-element-id="31473016" class="">Lorsque l’on a un ensemble de valeurs, le calcul de la
+      moyenne se fait en 3 étapes :</p>
+    <ul id="r-7176035" data-claire-element-id="31479493" class="">
+      <li id="r-7176030" data-claire-element-id="31473018">
+        <p id="r-7176029" data-claire-element-id="31473017">on fait la somme de toutes les valeurs (qu’on nommera&nbsp;
+          &nbsp;<code data-claire-semantic="text">sommeValeurs</code>&nbsp; ) ;</p>
+      </li>
+      <li id="r-7176032" data-claire-element-id="31473020">
+        <p id="r-7176031" data-claire-element-id="31473019">on compte le nombre de valeurs que l’on a (qu’on
+          nommera&nbsp; &nbsp;<code data-claire-semantic="text">nombreValeurs</code>&nbsp; ) ;</p>
+      </li>
+      <li id="r-7176034" data-claire-element-id="31479492">
+        <p id="r-7176033" data-claire-element-id="31479491">on calcule la moyenne en faisant&nbsp;<code
+            data-claire-semantic="text">moyenne = sommeValeurs / nombreValeurs</code>&nbsp; .</p>
+      </li>
+    </ul>
+    <h5 id="r-7176061" data-claire-element-id="31785724"><em>Parcourir un tableau</em></h5>
+    <p id="r-7176038" data-claire-element-id="31473025">Lorsque l’on a un tableau (par exemple &nbsp;<code
+        data-claire-semantic="text">monTableau</code>&nbsp; ) on utilise la boucle for of.</p>
+    <p id="r-7176039" data-claire-element-id="31472919">Par exemple :</p>
+    <pre id="r-7179556" data-claire-element-id="31785723" class="code-block"><code data-claire-semantic="javascript" data-code="{&quot;language&quot;:&quot;javascript&quot;,&quot;source&quot;:&quot;for (let elementDeTableau of monTableau) {\n    console.log(elementDeTableau); //Affiche chaque &amp;#xE9;l&amp;#xE9;ment individuellement\n}&quot;}" class="ace" data-widget="codeBlock"><div class="ace-openclassrooms"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">for</span> <span class="ace_paren ace_lparen">(</span><span class="ace_storage ace_type">let</span> <span class="ace_identifier">elementDeTableau</span> <span class="ace_keyword">of</span> <span class="ace_identifier">monTableau</span><span class="ace_paren ace_rparen">)</span> <span class="ace_paren ace_lparen">{</span>
+  </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">elementDeTableau</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">//Affiche chaque élément individuellement</span>
+  </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
+  </div></div></div></code><textarea class="code-block--raw-code"></textarea></pre>
+    <p id="r-7176043" data-claire-element-id="31473041">Vous pouvez manipuler&nbsp; &nbsp;<code
+        data-claire-semantic="text">elementDeTableau</code>&nbsp; comme bon vous semble (par exemple, l’ajouter dans un
+      autre tableau, l'additionner avec une variable globale, etc.).</p>
+    <p id="r-7176045" data-claire-element-id="31472925">Votre application de streaming permet aux utilisateurs de noter
+      les séries sur 5 étoiles. Votre collègue a construit le composant pour afficher la note moyenne pour chaque série,
+      mais elle a besoin que vous écriviez la fonction qui va calculer cette moyenne.</p>
+    <p id="r-7176046" data-claire-element-id="31473061">Elle vous explique que la fonction doit prendre un tableau de
+      nombres comme argument, et retourner un nombre qui correspond à la note moyenne calculée.</p>
+    <p id="r-7176047" data-claire-element-id="31479541">Suivez les étapes suivantes :</p>
+    <ol id="r-7176060" data-claire-element-id="31473073" class="">
+      <li id="r-7176049" data-claire-element-id="31472929">
+        <p id="r-7176048" data-claire-element-id="31472928">Au bon endroit dans la déclaration de fonction, choisissez
+          un nom pour le paramètre de votre fonction. N'oubliez pas, ce sera un tableau de nombres.<br>Pour calculer une
+          moyenne, on ajoute toutes les valeurs ensemble, puis on divise par le nombre de valeurs.</p>
+      </li>
+      <li id="r-7176051" data-claire-element-id="31472931">
+        <p id="r-7176050" data-claire-element-id="31472930">Créez une variable qui stockera la somme de tous les nombres
+          du tableau. Initialisez-la avec la valeur zéro.</p>
+      </li>
+      <li id="r-7176053" data-claire-element-id="31473072">
+        <p id="r-7176052" data-claire-element-id="31473071">Sachant que le paramètre reçu est un tableau de nombres,
+          utilisez une boucle for pour ajouter chaque nombre du tableau à votre variable&nbsp; &nbsp;<code
+            data-claire-semantic="text">somme</code>&nbsp; .</p>
+      </li>
+      <li id="r-7176055" data-claire-element-id="31472935">
+        <p id="r-7176054" data-claire-element-id="31472934">&nbsp;Créez une constante qui contient le résultat de la
+          somme finale divisée par le nombre de valeurs dans le tableau reçu en argument.</p>
+      </li>
+      <li id="r-7176057" data-claire-element-id="31472937">
+        <p id="r-7176056" data-claire-element-id="31472936">Faites en sorte que la fonction retourne le résultat final.
+        </p>
+      </li>
+      <li id="r-7176059" data-claire-element-id="31472939">
+        <p id="r-7176058" data-claire-element-id="31472938">BONUS : La troisième série, <em>Les Insectes de L'Isla
+            Clara</em>, n'a pas l'air de fonctionner correctement. En fait, elle n'a pas encore reçu de note, donc le
+          tableau passé ne contient aucune valeur.</p>
+      </li>
+    </ol>
+    <h5 id="r-7176082" data-claire-element-id="31785727"><strong>Solution</strong></h5>
+    <p id="r-7176062" data-claire-element-id="31472942">Vous avez terminé ? <a
+        href="https://codepen.io/nicolaspatschkowski/pen/MWwxpvg" target="_blank"
+        rel="noopener noreferrer nofollow">Voici un nouveau CodePen avec une solution</a> à l’exercice.</p>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-2" data-widget="foldable">
+    <h3 id="r-7179789" data-claire-element-id="31481583"
+      class="foldable__button secondTitle js-foldable-button hoveredCourseElement"><strong>En résumé</strong><i
+        class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-7176089" data-claire-element-id="31472969" class="">Dans ce chapitre, vous avez appris :</p>
+      <ul id="r-7176098" data-claire-element-id="31481582" class="">
+        <li id="r-7176091" data-claire-element-id="31472971">
+          <p id="r-7176090" data-claire-element-id="31472970">ce qu'est une fonction, comment en déclarer une et comment
+            en appeler une ;</p>
+        </li>
+        <li id="r-7176093" data-claire-element-id="31472973">
+          <p id="r-7176092" data-claire-element-id="31472972">ce que sont les paramètres, les arguments et les valeurs
+            de retour ;</p>
+        </li>
+        <li id="r-7176095" data-claire-element-id="31472975">
+          <p id="r-7176094" data-claire-element-id="31472974">à écrire une fonction qui parcourt un tableau de nombres
+            pour calculer leur moyenne ;</p>
+        </li>
+      </ul>
+      <p id="r-7176099" data-claire-element-id="31472979"><em>Dans le chapitre suivant, nous allons nous intéresser à un
+          type de fonction associé à une classe : les méthodes.</em></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

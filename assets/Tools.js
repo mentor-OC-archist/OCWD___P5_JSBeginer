@@ -1,4 +1,4 @@
-class Tools {
+export default class Tools {
     // Public field declarations
     // publicField = 0;
     // Private field declarations

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P2C3: Utilisez la bonne boucle pour répéter les tâches (for, while)</title>
+<style>    code[data-claire-semantic="text"]{background: rgba(0,0,0,.04);     padding: 1px 5px;     margin: 0 4px;     border: 1px solid rgba(0,0,0,.09);     display: inline-block;     word-break: break-word;}
+code[data-claire-semantic="javascript"] .ace-openclassrooms{    margin-top: 25px;
+    background-color: #272822;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+code[data-claire-semantic="javascript"]+textarea{display:none;}
+.ace_gutter-cell:before {
+    content: counter(ace_line, decimal);
+    counter-increment: ace_line;
+}
+</style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/6175841-apprenez-a-programmer-avec-javascript/6279104-utilisez-la-bonne-boucle-pour-repeter-les-taches-for-while">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <div class="foldable" id="ui-id-2" data-widget="foldable">
+    <h4 id="r-7179226" data-claire-element-id="31480603" class=""><strong>Pratiquez les boucles</strong><strong><code
+          data-claire-semantic="text">for</code></strong></h4>
+    <p id="r-7179777" data-claire-element-id="31480232" class=""><img id="r-7179776" data-claire-element-id="31480231"
+        src="../YourTurn.png"
+        alt="16165901356926_A-vous-de-jouer.png" style="cursor: -webkit-zoom-in;"></p>
+    <p id="r-7179144" data-claire-element-id="31478592">Voici un entraînement qui utilise des tableaux et des boucles
+      &nbsp;<code data-claire-semantic="text">for</code>&nbsp; .</p>
+    <p id="r-7179145" data-claire-element-id="31478593">Rendez-vous sur cet <a
+        href="https://codepen.io/nicolaspatschkowski/pen/ZEGRGpG" target="_blank"
+        rel="noopener noreferrer nofollow">éditeur CodePen</a>. Le composant épisode a été restructuré, et les épisodes
+      sont maintenant importés depuis une base de données.</p>
+    <p id="r-7179146" data-claire-element-id="31479401">Maintenant, vous devez implémenter du code qui remettra à zéro
+      l'information de visionnage pour tous les épisodes. Vous allez accomplir cette tâche en itérant le tableau&nbsp;
+      &nbsp;<code data-claire-semantic="text">episodes</code>&nbsp; en assignant la valeur false à la propriété&nbsp;
+      &nbsp;<code data-claire-semantic="text">hasBeenWatched</code>&nbsp; de chaque épisode.</p>
+    <p id="r-7179147" data-claire-element-id="31478595">Le tableau&nbsp; &nbsp;<code
+        data-claire-semantic="text">episodes</code>&nbsp; a déjà été déclaré pour vous.</p>
+    <ol id="r-7179152" data-claire-element-id="31479404">
+      <li id="r-7179149" data-claire-element-id="31478597">
+        <p id="r-7179148" data-claire-element-id="31478596">Itérez le tableau&nbsp; &nbsp;<code
+            data-claire-semantic="text">episodes</code>&nbsp; et assignez la valeur false à la propriété&nbsp;
+          &nbsp;<code data-claire-semantic="text">hasBeenWatched</code>&nbsp; de chaque épisode, en utilisant une boucle
+          for, for…in ou for…of.</p>
+      </li>
+      <li id="r-7179151" data-claire-element-id="31479403">
+        <p id="r-7179150" data-claire-element-id="31479402">Maintenant, faites en sorte que tous les épisodes soient
+          considérés comme ayant été vus. Cela fonctionne-t-il également ?</p>
+      </li>
+    </ol>
+    <p id="r-7179153" data-claire-element-id="31478383">N'oubliez pas, votre code ira entre les commentaires "===" sur
+      l'exercice.</p>
+    <h5 id="r-7179157" data-claire-element-id="31478424"><strong>Solution</strong></h5>
+    <p id="r-7179155" data-claire-element-id="31478385"><a href="https://codepen.io/nicolaspatschkowski/pen/dyorvOv"
+        target="_blank" rel="noopener noreferrer nofollow">Voici un nouveau CodePen avec une solution</a> à l’exercice.
+    </p>
+    <p id="r-7179156" data-claire-element-id="31478386">Ces types de boucles fonctionnent très bien pour un nombre fixe
+      d'itérations. Mais vous ne pouvez pas toujours savoir combien de fois une boucle doit être exécutée.</p>
+  </div>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-4" data-widget="foldable">
+    <h3 id="r-7179186" data-claire-element-id="31478618" class="foldable__button secondTitle js-foldable-button">
+      <strong>En résumé</strong><i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-7179179" data-claire-element-id="31478409">Dans ce chapitre, vous avez abordé deux façons de répéter les
+        tâches :</p>
+      <ul id="r-7179184" data-claire-element-id="31478617">
+        <li id="r-7179181" data-claire-element-id="31478614">
+          <p id="r-7179180" data-claire-element-id="31478613">la boucle&nbsp; &nbsp;<code
+              data-claire-semantic="text">for</code>&nbsp; , pour un nombre d'itérations fixe ;</p>
+        </li>
+        <li id="r-7179183" data-claire-element-id="31478616">
+          <p id="r-7179182" data-claire-element-id="31478615">la boucle&nbsp; &nbsp;<code
+              data-claire-semantic="text">while</code>&nbsp; , quand le nombre d'itérations nécessaires est inconnu.</p>
+        </li>
+      </ul>
+      <p id="r-7179185" data-claire-element-id="31478415"><em>Dans le chapitre suivant, nous allons nous intéresser à ce
+          qu'on peut faire quand les choses ne se passent pas comme prévu.</em></p>
+    </div>
+  </div>
+
+</body>
+
+</html>

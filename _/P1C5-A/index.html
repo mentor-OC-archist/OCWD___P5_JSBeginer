@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P1C5-A: Regroupez vos données avec les tableaux et les objets</title>
+  <script>
+
+  </script>
+  <!-- <script src="solution.js"></script> -->
+</head>
+
+<body>
+
+
+  <div class="foldable__content">
+    <p id="r-7178490" data-claire-element-id="31477391">Pour créer un tableau vide et l'enregistrer dans une variable,
+      utilisez une paire de crochets&nbsp;:</p>
+    <pre id="r-7178601" data-claire-element-id="31477392" class="code-block"><code data-claire-semantic="javascript" data-code="{&quot;language&quot;:&quot;javascript&quot;,&quot;source&quot;:&quot;let guests = [];&quot;}" class="ace" data-widget="codeBlock"><div class="ace-openclassrooms"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">let</span> <span class="ace_identifier">guests</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_paren ace_lparen">[</span><span class="ace_paren ace_rparen">]</span><span class="ace_punctuation ace_operator">;</span>
+  </div></div></div></code><textarea class="code-block--raw-code"></textarea></pre>
+    <p id="r-7178493" data-claire-element-id="31477393">Vous pouvez aussi créer un tableau rempli en plaçant les
+      éléments voulus à l'intérieur de ces crochets&nbsp;:</p>
+    <pre id="r-7178602" data-claire-element-id="31477394" class="code-block"><code data-claire-semantic="javascript" data-code="{&quot;language&quot;:&quot;javascript&quot;,&quot;source&quot;:&quot;let guests = [&amp;#x22;Sarah Kate&amp;#x22;, &amp;#x22;Audrey Simon&amp;#x22;, &amp;#x22;Will Alexander&amp;#x22;];&quot;}" class="ace" data-widget="codeBlock"><div class="ace-openclassrooms"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">let</span> <span class="ace_identifier">guests</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_paren ace_lparen">[</span><span class="ace_string">"Sarah Kate"</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">"Audrey Simon"</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_string">"Will Alexander"</span><span class="ace_paren ace_rparen">]</span><span class="ace_punctuation ace_operator">;</span>
+  </div></div></div></code><textarea class="code-block--raw-code"></textarea></pre>
+    <p id="r-7178496" data-claire-element-id="31477251">Vous pouvez ensuite accéder aux éléments de ce tableau par leur
+      indice :</p>
+    <pre id="r-7178603" data-claire-element-id="31786974" class="code-block"><code data-claire-semantic="javascript" data-code="{&quot;language&quot;:&quot;javascript&quot;,&quot;source&quot;:&quot;let firstGuest = guests[0]; // &amp;#x22;Sarah Kate&amp;#x22;\nlet thirdGuest = guests[2]; // &amp;#x22;Will Alexander&amp;#x22;\nlet undefinedGuest = guests[12] // undefined&quot;}" class="ace" data-widget="codeBlock"><div class="ace-openclassrooms"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">let</span> <span class="ace_identifier">firstGuest</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">guests</span><span class="ace_paren ace_lparen">[</span><span class="ace_constant ace_numeric">0</span><span class="ace_paren ace_rparen">]</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// "Sarah Kate"</span>
+  </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">let</span> <span class="ace_identifier">thirdGuest</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">guests</span><span class="ace_paren ace_lparen">[</span><span class="ace_constant ace_numeric">2</span><span class="ace_paren ace_rparen">]</span><span class="ace_punctuation ace_operator">;</span> <span class="ace_comment">// "Will Alexander"</span>
+  </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">let</span> <span class="ace_identifier">undefinedGuest</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">guests</span><span class="ace_paren ace_lparen">[</span><span class="ace_constant ace_numeric">12</span><span class="ace_paren ace_rparen">]</span> <span class="ace_comment">// undefined</span>
+  </div></div></div></code><textarea class="code-block--raw-code"></textarea></pre>
+    <aside id="r-7178606" data-claire-element-id="31477411" data-claire-semantic="warning" class="">
+      <p id="r-7178503" data-claire-element-id="31477258">N'oubliez pas de démarrer à l'indice&nbsp; 0&nbsp; !</p>
+    </aside>
+    <h4 id="r-7178607" data-claire-element-id="31480544" class=""><strong>Pratiquez la création d'un array</strong></h4>
+    <p id="r-7179762" data-claire-element-id="31480182" class="hoveredCourseElement"><strong><img id="r-7179761"
+          data-claire-element-id="31480181"
+          src="../YourTurn.png"
+          alt="16165859048525_A-vous-de-jouer.png"></strong></p>
+    <p id="r-7178504" data-claire-element-id="31477259" class="">Entraînez-vous à créer un tableau pour enregistrer les
+      épisodes de votre série télé avec cet <a href="https://codepen.io/nicolaspatschkowski/pen/LYVrPZL" target="_blank"
+        rel="noopener noreferrer nofollow">éditeur CodePen</a>.&nbsp;</p>
+    <p id="r-7178505" data-claire-element-id="31477412">Dans un exercice précédent, vous avez créé trois instances de la
+      classe&nbsp; &nbsp;<code data-claire-semantic="text">Episode</code>&nbsp; dans des variables séparées. Dans cet
+      exercice, vous allez regrouper ces variables dans un seul tableau (Array).</p>
+    <ol id="r-7178510" data-claire-element-id="31477415">
+      <li id="r-7178507" data-claire-element-id="31477414">
+        <p id="r-7178506" data-claire-element-id="31477413">Créez un Array stocké dans une variable episodes, et
+          peuplez-le avec les trois variables&nbsp; &nbsp;<code data-claire-semantic="text">firstEpisode</code>&nbsp;
+          ,&nbsp; &nbsp;<code data-claire-semantic="text">secondEpisode</code>&nbsp; et&nbsp; &nbsp;<code
+            data-claire-semantic="text">thirdEpisode</code>&nbsp; .</p>
+      </li>
+      <li id="r-7178509" data-claire-element-id="31477264">
+        <p id="r-7178508" data-claire-element-id="31477263">Essayez de changer l'ordre dans lequel vous avez ajouté les
+          épisodes, et regardez ce qu'il se passe lorsque vous rafraîchissez.&nbsp;</p>
+      </li>
+    </ol>
+    <p id="r-7178511" data-claire-element-id="31477266">N'oubliez pas, votre code ira entre les commentaires "===" sur
+      l'exercice.</p>
+    <h5 id="r-7178514" data-claire-element-id="31477416"><strong>Solution</strong></h5>
+    <p id="r-7178513" data-claire-element-id="31477268"><a href="https://codepen.io/nicolaspatschkowski/pen/NWqJdBy"
+        target="_blank" rel="noopener noreferrer nofollow">Voici un nouveau CodePen avec une solution</a> à l’exercice.
+    </p>
+  </div>
+
+
+</body>
+<style>
+  body {
+    background-color: #111;
+    color: #EEE;
+    font-family: 'Roboto Slab', serif;
+  }
+
+  .series-frame {
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid #EEE;
+    margin: 30px;
+    padding: 10px;
+  }
+
+  .series-frame h2 {
+    margin-right: 20px;
+  }
+</style>
+
+</html>

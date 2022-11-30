@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>P3C5: Déboguez votre fonction</title>
+<style>    code[data-claire-semantic="text"]{background: rgba(0,0,0,.04);     padding: 1px 5px;     margin: 0 4px;     border: 1px solid rgba(0,0,0,.09);     display: inline-block;     word-break: break-word;}
+code[data-claire-semantic="javascript"] .ace-openclassrooms{    margin-top: 25px;
+    background-color: #272822;
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+code[data-claire-semantic="javascript"]+textarea{display:none;}
+.ace_gutter-cell:before {
+    content: counter(ace_line, decimal);
+    counter-increment: ace_line;
+}
+</style>
+</head>
+
+<body>
+  <a
+    href="https://openclassrooms.com/fr/courses/6175841-apprenez-a-programmer-avec-javascript/6279979-deboguez-votre-fonction">Chapitre
+    du cours OC</a>
+  <hr />
+
+
+  <div class="foldable__content">
+    <p id="r-7179828" data-claire-element-id="31480365" class=""><strong><img id="r-7179827"
+          data-claire-element-id="31480364"
+          src="../YourTurn.png" alt=""></strong></p>
+    <p id="r-7177242" data-claire-element-id="31474782" class="">Il est important de savoir utiliser les consoles.log et
+      de bien analyser les différentes variables. L’objectif est de comprendre quelle est l’erreur de logique qui pose
+      souci.</p>
+    <p id="r-7177243" data-claire-element-id="31479984" class="">Rendez-vous sur le <a
+        href="https://codepen.io/quentin-laurent/pen/gOLEmey" target="_blank" rel="noopener noreferrer nofollow">CodePen
+        à cette adresse</a>. Le code a pour objectif de convertir des années en mois (dans une année, il y a 12 mois).
+      Si on saisit 10 ans dans le champ Année et qu’on clique sur Convertir, on se retrouve avec une phrase nous
+      indiquant que dans 10&nbsp;années il y a 80 mois, ce qui est faux car la bonne réponse est 120 mois.</p>
+    <p id="r-7177244" data-claire-element-id="31474985">Le calcul des mois se fait à la ligne 25, et on souhaite
+      comprendre ce qui ne va pas dans le calcul.</p>
+    <p id="r-7177245" data-claire-element-id="31474986" class="">Votre mission ici est de faire des console.log au
+      niveau des lignes 27 à 31 pour analyser les variables utilisées pour le calcul de la ligne 25. Suite à l'analyse,
+      vous pourrez comprendre ce qui ne va pas et effectuer la correction nécessaire.</p>
+    <h4 id="r-7177265" data-claire-element-id="31480376" class=""><strong>Correction</strong></h4>
+    <p id="r-7177247" data-claire-element-id="31474966" class="">À la ligne 28, nous ajoutons le code suivant :</p>
+    <pre id="r-7177327" data-claire-element-id="31474995" class="code-block"><code data-claire-semantic="javascript" data-code="{&quot;language&quot;:&quot;javascript&quot;,&quot;source&quot;:&quot;console.log(&amp;#x27;annee&amp;#x27;, annee);\n\nconsole.log(&amp;#x27;params&amp;#x27;, params);&quot;}" class="ace" data-widget="codeBlock"><div class="ace-openclassrooms"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'annee'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">annee</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">console</span><span class="ace_punctuation ace_operator">.</span><span class="ace_support ace_function ace_firebug">log</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'params'</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_identifier">params</span><span class="ace_paren ace_rparen">)</span><span class="ace_punctuation ace_operator">;</span>
+</div></div></div></code><textarea class="code-block--raw-code"></textarea></pre>
+    <p id="r-7177251" data-claire-element-id="31474791">Ce qui donnera dans la console, si on simule une conversion pour
+      la valeur 10 :</p>
+    <pre id="r-7177329" data-claire-element-id="31474997" class="code-block"><code data-claire-semantic="javascript" data-code="{&quot;language&quot;:&quot;javascript&quot;,&quot;source&quot;:&quot;&amp;#x3E; annee 10\n\n&amp;#x3E; params (20) [20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]&quot;}" class="ace" data-widget="codeBlock"><div class="ace-openclassrooms"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">&gt;</span> <span class="ace_identifier">annee</span> <span class="ace_constant ace_numeric">10</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">&gt;</span> <span class="ace_identifier">params</span> <span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">20</span><span class="ace_paren ace_rparen">)</span> <span class="ace_paren ace_lparen">[</span><span class="ace_constant ace_numeric">20</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">19</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">18</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">17</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">16</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">15</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">14</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">13</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">12</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">11</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">10</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">9</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">8</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">7</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">6</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">5</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">4</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">3</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">2</span><span class="ace_punctuation ace_operator">,</span> <span class="ace_constant ace_numeric">1</span><span class="ace_paren ace_rparen">]</span>
+</div></div></div></code><textarea class="code-block--raw-code"></textarea></pre>
+    <p id="r-7177256" data-claire-element-id="31479994" class="hoveredCourseElement">&nbsp;On en déduit que la valeur de
+      &nbsp;<code data-claire-semantic="text">annee</code>&nbsp; est cohérente. En ce qui concerne &nbsp;<code
+        data-claire-semantic="text">params</code>&nbsp; , on observe que c’est un tableau de valeur allant de 20 à 1.
+      Dans notre calcul, on souhaite récupérer la valeur du tableau qui vaut 12. On trouve cette valeur à l’index 8.</p>
+    <p id="r-7177258" data-claire-element-id="31480375">Si on reprend le calcul de mois :</p>
+    <pre id="r-7177331" data-claire-element-id="31475000" class="code-block"><code data-claire-semantic="javascript" data-code="{&quot;language&quot;:&quot;javascript&quot;,&quot;source&quot;:&quot;const mois = annee * params[12];&quot;}" class="ace" data-widget="codeBlock"><div class="ace-openclassrooms"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">const</span> <span class="ace_identifier">mois</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">annee</span> <span class="ace_keyword ace_operator">*</span> <span class="ace_identifier">params</span><span class="ace_paren ace_lparen">[</span><span class="ace_constant ace_numeric">12</span><span class="ace_paren ace_rparen">]</span><span class="ace_punctuation ace_operator">;</span>
+</div></div></div></code><textarea class="code-block--raw-code"></textarea></pre>
+    <p id="r-7177261" data-claire-element-id="31475001" class="">On constate que l’on récupère l’index 12 de &nbsp;<code
+        data-claire-semantic="text">params</code>&nbsp; , et non le 8. Donc on remplace la ligne 25 par :</p>
+    <pre id="r-7177332" data-claire-element-id="31475002" class="code-block"><code data-claire-semantic="javascript" data-code="{&quot;language&quot;:&quot;javascript&quot;,&quot;source&quot;:&quot;const mois = annee * params[8];&quot;}" class="ace" data-widget="codeBlock"><div class="ace-openclassrooms"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_storage ace_type">const</span> <span class="ace_identifier">mois</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">annee</span> <span class="ace_keyword ace_operator">*</span> <span class="ace_identifier">params</span><span class="ace_paren ace_lparen">[</span><span class="ace_constant ace_numeric">8</span><span class="ace_paren ace_rparen">]</span><span class="ace_punctuation ace_operator">;</span>
+</div></div></div></code><textarea class="code-block--raw-code"></textarea></pre>
+    <p id="r-7177263" data-claire-element-id="31474803" class="">Maintenant notre application donne des valeurs
+      cohérentes.</p>
+    <h4 id="r-7177268" data-claire-element-id="31475005" class=""><strong>Conclusion de l’exercice</strong></h4>
+    <p id="r-7177266" data-claire-element-id="31475004" class="">Cet exercice n’était pas une grosse application, mais
+      la démarche a permis de démontrer l'intérêt des console.log dans notre code pour bien comprendre les valeurs
+      réelles pendant l'exécution du programme. Il ne faut pas avoir peur de faire des console.log pour avoir une vision
+      plus large de la logique, mais attention à ne pas oublier de supprimer ces lignes de votre code avant une mise en
+      ligne.</p>
+  </div>
+
+
+  <hr />
+
+  <div class="foldable" id="ui-id-5" data-widget="foldable">
+    <h3 id="r-7177333" data-claire-element-id="31480011" class="foldable__button secondTitle js-foldable-button">
+      <strong>En résumé</strong><i class="foldable__icon icon-next"></i></h3>
+    <div class="foldable__content">
+      <p id="r-7177269" data-claire-element-id="31474809" class="">Dans ce chapitre, vous avez appris trois techniques
+        de débogage différentes :</p>
+      <ul id="r-7177276" data-claire-element-id="31480010" class="">
+        <li id="r-7177271" data-claire-element-id="31480005">
+          <p id="r-7177270" data-claire-element-id="31480004">affichage de console – parfait pour des erreurs petites,
+            simples et isolées, mais pas idéal dans des projets plus grands et plus complexes ;</p>
+        </li>
+        <li id="r-7177273" data-claire-element-id="31480007">
+          <p id="r-7177272" data-claire-element-id="31480006">utilisation d'outils pour développeur – qu'il s'agisse des
+            outils intégrés dans la plupart des navigateurs, ou du débogueur de votre environnement de développement
+            intégré, c'est à coup sûr la façon fiable de déboguer du code ;</p>
+        </li>
+        <li id="r-7177275" data-claire-element-id="31480009">
+          <p id="r-7177274" data-claire-element-id="31480008">débogage avec un canard en plastique – quand les choses
+            vont terriblement mal.</p>
+        </li>
+      </ul>
+      <p id="r-7177277" data-claire-element-id="31474817" class=""><em>Dans le chapitre suivant, nous allons nous
+          intéresser à un type de fonction qui, utilisé correctement, peut améliorer spectaculairement les performances
+          d'un projet.</em></p>
+    </div>
+  </div>
+
+</body>
+
+</html>
